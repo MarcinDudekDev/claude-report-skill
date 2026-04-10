@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="dark">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Publishing the /report Skill</title>
+    <meta name="report-type" content="task-completion">
+    <meta name="report-project" content="claude-report-skill">
+    <meta name="report-date" content="2026-04-10">
+    <script type="application/json" id="report-meta">
+    {"title": "Publishing the /report Skill", "type": "task-completion", "project": "claude-report-skill", "date": "2026-04-10"}
+    </script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@picocss/pico@2/css/pico.min.css">
+    <style>
+        :root { --pico-font-size: 15px; }
+        body { max-width: 900px; margin: 0 auto; padding: 2rem 1rem; }
+        .report-header { border-bottom: 1px solid var(--pico-muted-border-color); padding-bottom: 1rem; margin-bottom: 2rem; }
+        .report-header h1 { margin-bottom: 0.3rem; }
+        .meta { font-size: 0.85em; opacity: 0.6; }
+        .meta span { margin-right: 1.5em; }
+        .badge { display: inline-block; padding: 0.15em 0.5em; border-radius: 4px; font-size: 0.8em; font-weight: 600; }
+        .badge-success { background: #065f46; color: #6ee7b7; }
+        .badge-warning { background: #78350f; color: #fcd34d; }
+        .badge-error { background: #7f1d1d; color: #fca5a5; }
+        .badge-info { background: #1e3a5f; color: #93c5fd; }
+        table { width: 100%; }
+        table td, table th { padding: 0.5rem 0.75rem; }
+        .pass { color: #6ee7b7; }
+        .fail { color: #fca5a5; }
+        .warn { color: #fcd34d; }
+        pre { font-size: 0.85em; overflow-x: auto; }
+        .section { margin-bottom: 2rem; }
+        details summary { cursor: pointer; font-weight: 600; }
+        details { margin-bottom: 1rem; }
+    </style>
+</head>
+<body>
+    <div class="report-header">
+        <h1>Publishing the /report Skill</h1>
+        <div class="meta">
+            <span>claude-report-skill</span>
+            <span>2026-04-10 13:42</span>
+            <span class="badge badge-info">task-completion</span>
+        </div>
+    </div>
+    <main>
+
+        <section class="section">
+            <h2>Summary</h2>
+            <p>The <code>/report</code> Claude Code skill was audited for privacy, fixed for portability, published to GitHub, and submitted to 4 community directories. Social media posts were drafted for Reddit and X.</p>
+        </section>
+
+        <section class="section">
+            <h2>Changes Made</h2>
+            <table>
+                <thead><tr><th>File</th><th>Action</th><th>Description</th></tr></thead>
+                <tbody>
+                    <tr><td><code>SKILL.md</code></td><td>Created (public version)</td><td>Replaced <code>~/Tools/report</code> with generic <code>report</code> PATH reference</td></tr>
+                    <tr><td><code>bin/report</code></td><td>Created</td><td>Cross-platform browser open (macOS/Linux/Windows), Python stdlib only</td></tr>
+                    <tr><td><code>README.md</code></td><td>Created</td><td>Install instructions, usage examples, CLI reference, report type table</td></tr>
+                    <tr><td><code>LICENSE</code></td><td>Created</td><td>MIT license</td></tr>
+                </tbody>
+            </table>
+        </section>
+
+        <section class="section">
+            <h2>Privacy Audit</h2>
+            <table>
+                <thead><tr><th>Check</th><th>Result</th></tr></thead>
+                <tbody>
+                    <tr><td>Hardcoded user paths</td><td><span class="pass">&#10003; Clean</span> &mdash; uses <code>Path.home()</code></td></tr>
+                    <tr><td>API keys / credentials</td><td><span class="pass">&#10003; None found</span></td></tr>
+                    <tr><td>Private dependencies</td><td><span class="pass">&#10003; Python stdlib only</span></td></tr>
+                    <tr><td>Cross-platform support</td><td><span class="pass">&#10003; Added</span> &mdash; macOS, Linux, Windows</td></tr>
+                </tbody>
+            </table>
+        </section>
+
+        <section class="section">
+            <h2>Distribution</h2>
+            <table>
+                <thead><tr><th>Channel</th><th>Status</th><th>Link</th></tr></thead>
+                <tbody>
+                    <tr>
+                        <td>GitHub repo</td>
+                        <td><span class="pass">&#10003; Live</span></td>
+                        <td><a href="https://github.com/MarcinDudekDev/claude-report-skill">MarcinDudekDev/claude-report-skill</a></td>
+                    </tr>
+                    <tr>
+                        <td>anthropics/skills (official)</td>
+                        <td><span class="warn">PR #903</span></td>
+                        <td><a href="https://github.com/anthropics/skills/pull/903">PR awaiting review</a></td>
+                    </tr>
+                    <tr>
+                        <td>travisvn/awesome-claude-skills</td>
+                        <td><span class="warn">PR #556</span></td>
+                        <td><a href="https://github.com/travisvn/awesome-claude-skills/pull/556">PR awaiting review</a></td>
+                    </tr>
+                    <tr>
+                        <td>ComposioHQ/awesome-claude-skills</td>
+                        <td><span class="warn">PR #633</span></td>
+                        <td><a href="https://github.com/ComposioHQ/awesome-claude-skills/pull/633">PR awaiting review</a></td>
+                    </tr>
+                    <tr>
+                        <td>hesreallyhim/awesome-claude-code</td>
+                        <td><span class="fail">Manual</span></td>
+                        <td><a href="https://github.com/hesreallyhim/awesome-claude-code/issues/new?template=recommend-resource.yml">Submit via web form</a></td>
+                    </tr>
+                    <tr>
+                        <td>Reddit r/ClaudeCode</td>
+                        <td><span class="warn">Drafted</span></td>
+                        <td><code>/tmp/reddit-post-claudecode.md</code></td>
+                    </tr>
+                    <tr>
+                        <td>X / Twitter</td>
+                        <td><span class="warn">Drafted</span></td>
+                        <td><code>/tmp/x-post-report-skill.md</code></td>
+                    </tr>
+                </tbody>
+            </table>
+        </section>
+
+        <section class="section">
+            <h2>Next Steps</h2>
+            <ul>
+                <li>Submit to <a href="https://github.com/hesreallyhim/awesome-claude-code/issues/new?template=recommend-resource.yml">awesome-claude-code</a> via web form</li>
+                <li>Post Reddit and X content</li>
+                <li>Monitor PRs for reviewer feedback</li>
+                <li>Optionally register on CCPI, claudemarketplaces.com, skillsmp.com</li>
+            </ul>
+        </section>
+
+    </main>
+    <footer style="margin-top:3rem;padding-top:1rem;border-top:1px solid var(--pico-muted-border-color);font-size:0.8em;opacity:0.4">
+        Generated by Claude Code
+    </footer>
+</body>
+</html>

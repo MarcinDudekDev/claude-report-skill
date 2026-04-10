@@ -15,6 +15,8 @@ When Claude's response would exceed ~10 lines — research findings, audit resul
 
 ## Example
 
+See a real report: **[examples/example-task-completion.html](examples/example-task-completion.html)** (download and open in browser, or [preview it on GitHub Pages](https://marcindudekdev.github.io/claude-report-skill/examples/example-task-completion.html)).
+
 Instead of a wall of terminal text, you get this:
 
 ```
