@@ -15,12 +15,14 @@ When Claude's response would exceed ~10 lines — research findings, audit resul
 
 ## Example
 
-See a real report: **[examples/example-task-completion.html](examples/example-task-completion.html)** (download and open in browser, or [preview it on GitHub Pages](https://marcindudekdev.github.io/claude-report-skill/examples/example-task-completion.html)).
-
 Instead of a wall of terminal text, you get this:
 
+![Example report screenshot](examples/example-report-screenshot.webp)
+
+See the full HTML: **[examples/example-task-completion.html](examples/example-task-completion.html)** (download and open in browser).
+
 ```
-📄 Report: Security Audit Results → ~/claude-reports/myproject/2026-04-10/143022-security-audit-results.html
+Report: Security Audit Results → ~/claude-reports/myproject/2026-04-10/143022-security-audit-results.html
 ```
 
 The report opens in your browser with structured sections, pass/fail tables, color-coded badges, and collapsible details.
